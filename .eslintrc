@@ -1,0 +1,33 @@
+{
+  "env": {
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module"
+  },
+  "plugins": ["prettier"],
+  "extends": ["plugin:prettier/recommended"],
+  "parser": "babel-eslint",
+  "globals": {
+    "describe": false,
+    "it": false,
+    "before": false,
+    "beforeEach": false,
+    "after": false,
+    "afterEach": false,
+    "done": false
+  },
+  "rules": {
+    "strict": "off",
+    "padded-blocks": "off",
+    "comma-dangle": "off",
+    "no-param-reassign": "off",
+    "arrow-body-style": ["error", "as-needed"],
+    "no-underscore-dangle": "off",
+    "no-else-return": "off",
+    "no-unused-vars": "error",
+    "dot-notation": "off",
+    "prettier/prettier": "error"
+  }
+}

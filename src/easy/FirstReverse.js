@@ -1,9 +1,8 @@
-const FirstReverse = str => {
-  return str
+const FirstReverse = str =>
+  str
     .split("")
     .reverse()
     .join("");
-};
 
 // keep this function call here
 FirstReverse(readline());

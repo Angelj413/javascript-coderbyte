@@ -1,12 +1,12 @@
 const LetterChanges = str => {
-  const converted = str.replace(/[a-z]/gi, char => {
-    return char === "z" || char === "Z"
+  const converted = str.replace(/[a-z]/gi, char =>
+    char === "z" || char === "Z"
       ? "a"
-      : String.fromCharCode(char.charCodeAt() + 1);
-  });
+      : String.fromCharCode(char.charCodeAt() + 1),
+  );
 
   const capitalized = converted.replace(/a|e|i|o|u/gi, vowel =>
-    vowel.toUpperCase()
+    vowel.toUpperCase(),
   );
 
   return capitalized;
